@@ -23,7 +23,7 @@ const checkButtonStyle = STYLES.includes(buttonStyle)
   : SIZES[0];
 
   return(
-      <Link to='/sign-in' className="btn-mobile">
+      <Link to='/Sign' className="btn-mobile">
 <button
 className={`btn ${checkButtonStyle} ${checkButtonSize}`}
 onClick={onClick}
