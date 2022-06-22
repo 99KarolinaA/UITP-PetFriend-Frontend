@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import LoginAndRegister from './components/pages/LoginAndRegister'
 import AdminPage from "./pages/AdminPage";
+import PetfriendProfile from "./pages/PetfriendProfile";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path='/' element={<Home/>}/>
                     <Route path="/Sign" element={<LoginAndRegister/>}/>
                     <Route path="/Admin" element={<AdminPage/>}/>
+                    <Route path="/PetFriendProfile" element={<PetfriendProfile/>}/>
                 </Routes>
                 <Footer/>
             </Router>

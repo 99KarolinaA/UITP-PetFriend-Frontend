@@ -1,5 +1,5 @@
 import Card from "../Card";
-import Filters from "../Filters";
+import ProfileCard from "./ProfileCard";
 
 function AdminPage() {
 
@@ -52,19 +52,20 @@ function AdminPage() {
         return mockData.map((result, index) => {
             return (
                 <Card image={result.Image} title={result.Name} description={result.Description} firstButton={true}
-                      btnText="View more"/>
+                      secondButton={true} btnText="Accept" btn2Text="Decline"/>
             );
 
         });
     };
 
     return (
-        <>
-            <Filters/>
-            <div className="wrapper">
+        <div style={{display: 'flex', marginTop: '60px', marginLeft: '60px'}}>
+            <ProfileCard image={mockData.at(0).Image} title={mockData.at(0).Name}
+                         description={mockData.at(0).Description}/>
+            <div className="wrapper" style={{paddingTop: '60px', width: '70%'}}>
                 {getCards()}
             </div>
-        </>
+        </div>
     );
 }
 
