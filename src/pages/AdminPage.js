@@ -1,47 +1,48 @@
 import Card from "../Card";
+import Filters from "../Filters";
 
 function AdminPage() {
 
-    const mockData =  [
+    const mockData = [
         {
             "Name": "Karolina",
-            "Image": "https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=",
+            "Image": "https://shopcdn.stockphotosecrets.com/resizenp/600x600/x@02d43169dc/smss52/smsimg30/pv1000/ingimagecontributors/ing_47129_47221.jpg",
             "Description": "Description",
             "Date": "29 March 2022 17:00",
         },
         {
             "Name": "Name",
-            "Image":"https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=",
+            "Image": "https://shopcdn.stockphotosecrets.com/resizenp/600x600/x@02d43169dc/smss52/smsimg30/pv1000/ingimagecontributors/ing_47129_47221.jpg",
             "Description": "Description",
             "Date": "Starts in 1 hour"
         },
         {
             "Name": "Name2",
-            "Image":"https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=",
+            "Image": "https://shopcdn.stockphotosecrets.com/resizenp/600x600/x@02d43169dc/smss52/smsimg30/pv1000/ingimagecontributors/ing_47129_47221.jpg",
             "Description": "Description",
             "Date": "29 March 2022 17:00"
         },
         {
             "Name": "Name2",
-            "Image":"https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=",
+            "Image": "https://shopcdn.stockphotosecrets.com/resizenp/600x600/x@02d43169dc/smss52/smsimg30/pv1000/ingimagecontributors/ing_47129_47221.jpg",
             "Description": "Description",
             "Date": "29 March 2022 17:00"
         },
         {
             "Name": "Name2",
-            "Image":"https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=",
+            "Image": "https://shopcdn.stockphotosecrets.com/resizenp/600x600/x@02d43169dc/smss52/smsimg30/pv1000/ingimagecontributors/ing_47129_47221.jpg",
             "Description": "Description",
             "Date": "29 March 2022 17:00"
         },
         {
             "Name": "Name2",
-            "Image":"https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=",
+            "Image": "https://shopcdn.stockphotosecrets.com/resizenp/600x600/x@02d43169dc/smss52/smsimg30/pv1000/ingimagecontributors/ing_47129_47221.jpg",
             "Description": "Description",
             "Date": "29 March 2022 17:00"
         },
         {
             "Name": "Name2",
-            "Image":"https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=",
+            "Image": "https://shopcdn.stockphotosecrets.com/resizenp/600x600/x@02d43169dc/smss52/smsimg30/pv1000/ingimagecontributors/ing_47129_47221.jpg",
             "Description": "Description",
             "Date": "29 March 2022 17:00"
         },
@@ -57,9 +58,12 @@ function AdminPage() {
     };
 
     return (
-        <div className="wrapper">
-            {getCards()}
-        </div>
+        <>
+            <Filters/>
+            <div className="wrapper">
+                {getCards()}
+            </div>
+        </>
     );
 }
 

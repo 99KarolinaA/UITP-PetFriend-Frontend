@@ -5,51 +5,39 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function Filters() {
     return (
-        <div>
-            <div style={{
-                display: 'block',
-                width: 700,
-                padding: 30
-            }}>
-                <Dropdown>
-                    <Dropdown.Toggle variant="success">
-                        Choose
+        <div style={{width: '800px', marginLeft: '410px', paddingTop: '30px', paddingBottom: '30px'}} >
+                <Dropdown style={{display: 'inline', marginRight: '20px'}}>
+                    <Dropdown.Toggle variant="outline-secondary">
+                        Get all
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item href="#">
-                            All pet owners
+                            Pet owners
                         </Dropdown.Item>
                         <Dropdown.Item href="#">
-                            All pet sitters
+                            Pet sitters
                         </Dropdown.Item>
                         <Dropdown.Item href="#">
-                            All reservations
+                            Reservations
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-            </div>
-            <div style={{
-                display: 'block',
-                width: 700,
-                padding: 30
-            }}>
-                <Dropdown>
-                    <Dropdown.Toggle variant="success">
-                        Choose area
+                <Dropdown style={{display: 'inline'}}>
+                    <Dropdown.Toggle variant="outline-secondary">
+                        For area
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item href="#">
                             Skopje
                         </Dropdown.Item>
                         <Dropdown.Item href="#">
-                           Ohrid
+                            Ohrid
                         </Dropdown.Item>
                         <Dropdown.Item href="#">
                             Stip
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-            </div>
         </div>
     );
 }
