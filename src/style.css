@@ -1,0 +1,122 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.col-md-4 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 1.5em;
+    border: solid 1px rgba(0, 0, 0, 0.08);
+
+}
+
+.card:hover {
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.08);
+}
+.card-title {
+    margin-top: 0.5rem;
+}
+.card-text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.card-text .fa {
+    font-size: 26px;
+}
+.card-img-top {
+    width: 40%;
+    align-self: center;
+    margin-top: 1rem;
+}
+.avatar {
+    width: 140px;
+    margin: auto;
+}
+.avatar img {
+    border: solid 6px transparent;
+    border-radius: 50%;
+}
+.card:hover .avatar img {
+    border-color: rgb(99, 204, 131);
+}
+
+.btn-group{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30px;
+    margin-left: 20px;
+}
+
+.button-34 {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    display: inline-block;
+    margin-right: 20px;
+
+
+}
+
+footer p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer p a,
+footer p a:hover {
+    color: rgb(99, 204, 131);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1500px;
+    }
+}
+.row{
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
