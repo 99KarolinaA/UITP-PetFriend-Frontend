@@ -1,5 +1,5 @@
-import Card from "../Card";
-import Filters from "../Filters";
+import Card from "../helperComponents/Card";
+import Filters from "../helperComponents/Filters";
 
 function AdminPage() {
 

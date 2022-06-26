@@ -1,7 +1,7 @@
-import Card from "../Card";
-import ProfileCard from "./ProfileCard";
+import Card from "../helperComponents/Card";
+import ProfileCard from "../helperComponents/ProfileCard";
 
-function AdminPage() {
+function PetOwnerProfile() {
 
     const mockData = [
         {
@@ -48,25 +48,34 @@ function AdminPage() {
         },
     ]
 
-    const getCards = () => {
+    const getAcceptedBookings = () => {
         return mockData.map((result, index) => {
             return (
-                <Card image={result.Image} title={result.Name} description={result.Description} firstButton={true}
-                      secondButton={true} btnText="Accept" btn2Text="Decline"/>
+                <Card image={result.Image} title={result.Name} description={result.Description} secondButton={true}
+                      btn2Text="Decline"/>
             );
 
         });
     };
 
+
     return (
-        <div style={{display: 'flex', marginTop: '60px', marginLeft: '60px'}}>
-            <ProfileCard image={mockData.at(0).Image} title={mockData.at(0).Name}
-                         description={mockData.at(0).Description}/>
-            <div className="wrapper" style={{paddingTop: '60px', width: '70%'}}>
-                {getCards()}
+        <>
+            <div style={{display: 'flex', marginTop: '60px', marginLeft: '60px'}}>
+                <ProfileCard image={mockData.at(0).Image} title={mockData.at(0).Name}
+                             description={mockData.at(0).Description}/>
+                <div style={{paddingTop: '60px', width: '70%'}}>
+                    <h1 style={{
+                        paddingLeft: '90px',
+                        paddingBottom: '40px'
+                    }}>{getAcceptedBookings().length + ' scheduled bookings'}</h1>
+                    <div className="wrapper">
+                        {getAcceptedBookings()}
+                    </div>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
-export default AdminPage;
+export default PetOwnerProfile;
