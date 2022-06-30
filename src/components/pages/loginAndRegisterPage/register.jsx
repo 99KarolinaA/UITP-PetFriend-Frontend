@@ -34,6 +34,10 @@ export class Register extends React.Component {
                             <input type="password" name="password" placeholder="password" />
                         </div>
                         <div className="form-group">
+                            <label htmlFor="location">Location</label>
+                            <input type="text" name="location" placeholder="location" />
+                        </div>
+                        <div className="form-group">
                             <FormControl>
                                 <FormLabel id="demo-row-radio-buttons-group-label">What will you be?</FormLabel>
                                 <RadioGroup
