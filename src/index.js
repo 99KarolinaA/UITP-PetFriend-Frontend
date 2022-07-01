@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UserCards from './allrRservationsPage'
+import Form from './Form'
 import "./style.css"
 
 
@@ -8,7 +8,7 @@ function App() {
     return (
         <div className="App">
             <div className="container">
-                <UserCards />
+                <Form />
             </div>
         </div>
     );

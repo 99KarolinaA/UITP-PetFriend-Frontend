@@ -3,7 +3,6 @@
     text-align: center;
 }
 .container{
-    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -23,6 +22,9 @@
 .col-md-4 {
     margin-bottom: 30px;
     margin-top: 30px;
+}
+.col-sm-10 {
+    width:100%;
 }
 
 .card {
@@ -108,11 +110,7 @@ footer p a:hover {
     color: rgb(99, 204, 131);
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1500px;
-    }
-}
+
 .row{
     display: flex;
     margin-right: -15px;
@@ -120,3 +118,20 @@ footer p a:hover {
     flex-direction: row;
     flex-wrap: nowrap;
 }
+.form-34{
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 3rem;
+        text-align: left;
+
+}
+.form-34 .header{
+    font-size: 2em;
+}
+
+.form-34 .fs{
+    padding-left:.75rem;
+    padding-top: 1em;
+
+}
+
