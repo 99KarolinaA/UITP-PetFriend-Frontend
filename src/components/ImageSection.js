@@ -11,7 +11,7 @@ function ImageSection(){
     return(
         <div className='header'>
             <h1>Would rather become a petfriend and get paid?</h1>
-            <AwesomeButton buttonStyle='btn--primary' href="/become" className="applybutton">APPLY NOW</AwesomeButton>
+            <AwesomeButton href="/become" className="applybutton">APPLY NOW</AwesomeButton>
         </div>
 
     )
