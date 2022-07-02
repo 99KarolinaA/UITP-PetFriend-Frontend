@@ -1,6 +1,6 @@
 .section{
     background-color: rgb(206, 191, 191);
-    height:500px;
+    height:1200px;
 }
 
 
@@ -48,4 +48,10 @@ margin-bottom:50px;
     font-size:15.2px;
 
 
+}
+
+.cards{
+    margin-left:300px;
+    margin-top:50px;
+    position:absolute;
 }
