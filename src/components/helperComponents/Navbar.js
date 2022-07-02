@@ -47,8 +47,14 @@ function Navbar(){
                 <Link to='/become' className='nav-links' onClick={closeMobileMenu}>
                     Become an approved PetFriend
                 </Link>
+                <li className='nav-item'>
+                    <Link to='PetFriendFind' className='nav-links' onClick={closeMobileMenu}>
+                        Find Petfriends
+                    </Link>
+                </li>
                 
             </li>
+
             <li className='nav-item'>
                 <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                     About
