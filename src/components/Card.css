@@ -1,21 +1,22 @@
 .card-container{
-    width:400px;
+    width:300px;
 overflow:hidden;
 box-shadow: 0px 0px 15px -5px;
 background-color:White; 
 border: 1px solid curved white;
 border-radius:10px;
-margin-top:50px;
+margin-top:20px;
+margin-left:25px;
 
 }
 
 .image-container >img{
     overflow:hidden;
-    height:400px;
-    width:300px;
+    height:300px;
+    width:200px;
     align-items: center;
-    margin-left:12.5%;
-    margin-top:5%;
+    margin-left:16.5%;
+    margin-top:2%;
     border: 20px solid curved white;
     border-radius:50px;
 

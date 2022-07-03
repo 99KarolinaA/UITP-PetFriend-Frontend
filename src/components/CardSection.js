@@ -3,6 +3,7 @@ import '../App.css'
 import './CardSection.css';
 import { AwesomeButton } from 'react-awesome-button';
 import Card from './Card'
+import { ImageList } from '@mui/material';
 
 
 
@@ -19,6 +20,47 @@ function CardSection() {
                     "name": "test2",
                     "bio": "sakam kucinja",
                         },
+                        {
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                            "name": "test2",
+                            "bio": "sakam kucinja",
+                                },
+                                {
+                                    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                                    "name": "test2",
+                                    "bio": "sakam kucinja",
+                                        },
+                                        {
+                                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                                            "name": "test2",
+                                            "bio": "sakam kucinja",
+                                                },
+                                                {
+                                                    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                                                    "name": "test2",
+                                                    "bio": "sakam kucinja",
+                                                        },
+                                                        {
+                                                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                                                            "name": "test2",
+                                                            "bio": "sakam kucinja",
+                                                                },
+                                                                {
+                                                                    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                                                                    "name": "test2",
+                                                                    "bio": "sakam kucinja",
+                                                                        },
+                                                                        {
+                                                                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                                                                            "name": "test2",
+                                                                            "bio": "sakam kucinja",
+                                                                                },
+                                                                                {
+                                                                                    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Timo_Werner_850_0621.jpg",
+                                                                                    "name": "test2",
+                                                                                    "bio": "sakam kucinja",
+                                                                                        },
+
     ]
     const getCards = () => {
         return mockData.map((result, index) => {
@@ -78,6 +120,7 @@ function CardSection() {
                                 name="Training"
                                 type="checkbox" />
                             Training
+                        
                         </label> <br></br>
                     </div>
 
@@ -87,7 +130,9 @@ function CardSection() {
             </div>
 
             <div className="cards"> 
+            <ImageList cols={4}>
                              {getCards()}
+                             </ImageList>
             </div>
 
 
