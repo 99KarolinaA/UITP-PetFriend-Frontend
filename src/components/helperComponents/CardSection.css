@@ -1,0 +1,57 @@
+.section{
+    background-color: rgb(206, 191, 191);
+    height:1200px;
+}
+
+
+.forma{
+    background-color:white;
+    width:10%;
+    border: 1px solid curved white;
+    border-radius:10px;
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:2%;
+    position:absolute;
+    margin-top:2%;
+}
+
+.checkboxes{
+    margin-left:20px;
+    margin-bottom:50px;
+}
+
+.button1{
+    margin-left:55%;
+    border:none;
+    background-color:white;
+    color:red;
+    font-size:15px;
+
+}
+
+.servisi{
+    font-size:20px;
+    color:black;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.location{
+    margin-top:20px;
+    margin-left:5px;
+}
+
+.selectForm{
+    margin-left:5px;
+    font-size:15.2px;
+
+
+}
+
+.cards{
+    margin-left:300px;
+    margin-top:50px;
+    position:absolute;
+}
