@@ -41,7 +41,7 @@ const Register = (props) => {
 
     return (
         <div className="base-container" ref={props.containerRef}>
-            <div className="header">Register</div>
+            <div>Register</div>
             <div className="content">
                 <div className="image">
                     <img src={loginImg}/>

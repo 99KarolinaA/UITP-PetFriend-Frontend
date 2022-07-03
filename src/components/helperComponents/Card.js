@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
 
-function Card({image, title, description, btnText, firstButton = false, secondButton = false, btn2Text = ''}) {
+function Card({image, title, description, btnText, firstButton = false, secondButton = false, btn2Text = '', deleteCard, id}) {
     return (
         <div className="card">
             <div className="card__body">
@@ -16,7 +16,7 @@ function Card({image, title, description, btnText, firstButton = false, secondBu
                 fontWeight: 'bold',
                 fontSize: '1rem',
                 margin: '1rem'
-            }}>{btn2Text}</Button>}
+            }} onClick={()=>deleteCard(id)}>{btn2Text}</Button>}
         </div>
 
     );

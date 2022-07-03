@@ -16,7 +16,7 @@ function ProfileCard({image, title, description}) {
                     </div>
                 </div>
             </div>
-            <div style={{marginTop: '60px'}}>
+            <div style={{marginTop: '60px', marginBottom:'100px'}}>
                 <Calendar onChange={onChange} value={value}/>
             </div>
         </div>

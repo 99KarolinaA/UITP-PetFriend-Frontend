@@ -33,7 +33,7 @@ const Login = (props) => {
     }
     return (
         <div className="base-container" ref={props.containerRef}>
-            <div className="header">Login</div>
+            <div>Login</div>
             <div className="content">
                 <div className="image">
                     <img src={loginImg}/>

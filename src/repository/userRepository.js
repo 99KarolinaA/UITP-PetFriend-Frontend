@@ -21,6 +21,22 @@ const UserRepository = {
             "role": "PetOwner",
             "location": location
         })
+    },
+    reserve: (petFriendName) => {
+        return axios.post("/reservations/create", {
+            "sitter": petFriendName
+        })
+    },
+    getReservationsByPetOwner: ()=> {
+        return axios.get("/reservations/byPetOwner");
+    },
+    getReservationsByPetFriend: (confirmation)=> {
+        return axios.post("/reservations/byPetFriend", {
+            "confirmation": confirmation
+        });
+    },
+    deleteReservation: (id) => {
+        return axios.post(`/reservations/delete?id=${id}`)
     }
 
 }

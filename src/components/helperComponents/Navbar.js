@@ -52,12 +52,32 @@ function Navbar(){
                         Find Petfriends
                     </Link>
                 </li>
-                
+                <li className='nav-item'>
+                    <Link to='/PetOwnerProfile' className='nav-links' onClick={closeMobileMenu}>
+                        Your Pet Owner Profile
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/PetFriendProfile' className='nav-links' onClick={closeMobileMenu}>
+                        Your Pet Friend Profile
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/Admin' className='nav-links' onClick={closeMobileMenu}>
+                        Filter
+                    </Link>
+                </li>
             </li>
 
             <li className='nav-item'>
                 <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                     About
+                </Link>
+            </li>
+
+            <li className='nav-item'>
+                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    Log out
                 </Link>
             </li>
         </ul>
