@@ -211,3 +211,7 @@ button.card__btn:hover {
     color: white;
 
 }
+
+.form-check{
+    text-align: left;
+}

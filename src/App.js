@@ -8,6 +8,7 @@ import AdminPage from "./components/pages/AdminPage";
 import PetfriendProfile from "./components/pages/PetfriendProfile";
 import PetOwnerProfile from "./components/pages/PetOwnerProfile";
 import PetFriendFind from "./components/helperComponents/PetFriendFind";
+import Form from "./Form";
 
 function App() {
     return (
@@ -20,7 +21,8 @@ function App() {
                     <Route path="/Admin" element={<AdminPage/>}/>
                     <Route path="/PetFriendProfile" element={<PetfriendProfile/>}/>
                     <Route path="/PetOwnerProfile" element={<PetOwnerProfile/>}/>
-                    <Route path='PetFriendFind' element ={<PetFriendFind/>} />
+                    <Route path='/PetFriendFind' element ={<PetFriendFind/>} />
+                    <Route path='/Reserve' element = {<Form />}/>
                 </Routes>
                 <Footer/>
             </Router>
